@@ -26,7 +26,6 @@
 #define STDRAND_H
 
 #include<stdlib.h>
-#include<time.h>
 #include<string.h>
 
 long rand_int(const long min, const long max);
@@ -39,7 +38,6 @@ GitHub: @farhanalioffical
 Free to use
 */
 long rand_int(const long min, const long max){
-	srand(time(NULL));
 	if(min > max)
 		return -1;
 	return rand() % (max - min + 1) + min;
