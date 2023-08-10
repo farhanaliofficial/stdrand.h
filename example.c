@@ -13,5 +13,8 @@ int main() {
     long randomIntArray = rand_choice_int(numArray, sizeof(numArray) / sizeof(int));
     printf("Random integer from array: %ld\n", randomIntArray);
     
+    char randomGeneratedChar = rand_char('A', 'Z');
+    printf("Random generated character between A and Z: %c\n", randomGeneratedChar);
+    
     return 0;
 }
