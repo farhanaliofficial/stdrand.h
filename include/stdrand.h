@@ -31,6 +31,7 @@
 long rand_int(const long min, const long max);
 char rand_choice_char(const char* arr);
 long rand_choice_int(const int* arr, const int s);
+char rand_char(const char a, const char b);
 
 #endif
 /*
@@ -47,4 +48,7 @@ char rand_choice_char(const char* arr){
 }
 long rand_choice_int(const int* arr, const int s){
 	return arr[rand_int(0, s)];
+}
+char rand_char(const char a, const char b){
+	return (int) a > (int) b ? 'a' : (char)rand_int((int) a, (int) b);
 }
